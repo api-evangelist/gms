@@ -1,7 +1,11 @@
 aid: gms
+
 url: https://raw.githubusercontent.com/api-evangelist/gms/refs/heads/main/apis.yml
+
 name: GMS
+
 type: Index
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -13,6 +17,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -24,9 +29,49 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gms.png
-description: 'Profile for GMS in the API Evangelist network. Fortune F1000 (rank 758).'
+
+description: 'GMS (Global Message Services) provides a multichannel communication platform offering CPaaS, email, SMS, WhatsApp, Viber, and chatbot solutions. Their APIs enable enterprises to integrate messaging, voice, and AI-driven interactions across channels, with robust security, analytics, and scalability for global outreach.'
+
 created: '2026-05-05'
+
 modified: '2026-05-05'
+
 specificationVersion: '0.23'
+
+website: https://gms.net
+
+tags:
+  - communications
+  - cpaaS
+  - messaging
+  - email
+  - chatbot
+
+common:
+- type: Hosts
+  url: hosts/gms-hosts.yml
+- type: Vendors
+  url: vendors/gms-vendors.yml
+- type: DomainSecurity
+  url: security/gms-domain-security.yml
+- type: Website
+  url: https://gms.net/
+
 apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's API endpoint https://gms.com/api returns a 404 page, with no OpenAPI or other machine-readable contract.
+  evidence:
+    - url: https://gms.com/api
+      status: 404
+  checked: '2026-10-03'
+x-enrichment:
+  date: '2026-10-03'
+  status: minimal
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
