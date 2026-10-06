@@ -36,7 +36,7 @@ description: 'GMS (Global Message Services) provides a multichannel communicatio
 
 created: '2026-05-05'
 
-modified: '2026-05-05'
+modified: '2026-10-06'
 
 specificationVersion: '0.23'
 
@@ -50,6 +50,10 @@ tags:
   - chatbot
 
 common:
+- url: https://gms.net/news
+  type: Blog
+- url: https://gms.net/news/rss.xml
+  type: BlogRSS
 - type: Hosts
   url: hosts/gms-hosts.yml
 - type: Vendors
