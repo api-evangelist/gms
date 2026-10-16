@@ -2,22 +2,18 @@
 kin_checks:
   slug: gms
   schema_version: 0.23.0
-  scored_at: '2026-10-03'
-  run_ts: 2026-10-03T024842
+  scored_at: '2026-10-11'
+  run_ts: 2026-10-11T110117
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.23.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 153
-    earned: 3
+    earned: 6
     partial: 0
     missed: 104
-    na: 46
+    na: 43
   checks:
-  - id: description_substantive
-    status: missed
-  - id: tags_present
-    status: missed
   - id: maintainer_present
     status: missed
   - id: newsroom_present
@@ -138,8 +134,6 @@ kin_checks:
     status: missed
   - id: reg_authentication_documented
     status: missed
-  - id: reg_security_disclosure
-    status: missed
   - id: reg_vulnerability_disclosure
     status: missed
   - id: reg_terms_of_service
@@ -151,6 +145,12 @@ kin_checks:
   - id: reg_standards_conformance
     status: missed
   - id: reg_named_standard_conformance
+    status: missed
+  - id: reg_consent_model
+    status: missed
+  - id: reg_certification_signal
+    status: missed
+  - id: reg_camara_conformance
     status: missed
   - id: reg_sbom
     status: missed
@@ -252,9 +252,6 @@ kin_checks:
   - os_releases
   - os_security_policy
   - reg_ai_transparency
-  - reg_camara_conformance
-  - reg_certification_signal
-  - reg_consent_model
   - reg_entitlement_terms
   - reg_fapi_profile
   - reg_mandate_verified
